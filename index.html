@@ -79,7 +79,7 @@
 						<li>Links</li>
 						
 						
-						<li>Über</li>
+						<li>A propos</li>
 						
 					</ul>
 				</div>
@@ -232,7 +232,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="install-nodejs"><a href="#install-nodejs" class="headerlink" title="install nodejs"></a>install nodejs</h2><p>讲D:\Program Files\nodejs\node_modules\npm添加到环境变量Path<br>用cmd(不行的话改用git bash):<br><code> $ npm install hexo-cli -g</code><br>用cmd(不要用git bash):<br><code> $ hexo init e:\Source\Playground\HexoTest # 一定要是一个空文件夹！！！</code><br><code> $ cd e:\Source\Playground\HexoTest</code><br><code> $ npm install</code><br><code> $ hexo server -p 9090</code><br>成功了就可以ctrl+C进行下面的步骤</p>
+        <h2 id="install-nodejs"><a href="#install-nodejs" class="headerlink" title="install nodejs"></a>install nodejs</h2><p>从官网nodejs.org下载msi安装包安装<br>将D:\Program Files\nodejs\node_modules\npm添加到环境变量Path<br>用cmd(不行的话改用git bash):<br><code> $ npm install hexo-cli -g</code><br>用cmd(不要用git bash):<br><code> $ hexo init e:\Source\Playground\HexoTest # 一定要是一个空文件夹！！！</code><br><code> $ cd e:\Source\Playground\HexoTest</code><br><code> $ npm install</code><br><code> $ hexo server -p 9090</code><br>成功了就可以ctrl+C进行下面的步骤</p>
 <h2 id="为git添加SSH"><a href="#为git添加SSH" class="headerlink" title="为git添加SSH"></a>为git添加SSH</h2><p>然后按照 <a href="http://iread.io/2015/09/hexo-guide-3/" target="_blank" rel="external">http://iread.io/2015/09/hexo-guide-3/</a> 的方法添加ssh<br>其中，用cmd(不要用git bash):<br><code> npm install hexo-deployer-git –save ## 安装部署所需要的插件</code><br>按照他的方法继续配置_config.yml，用git bash部署:<br><code> $ cd e:\Source\Playground\HexoTest</code><br><code> $ hexo clean &amp;&amp; hexo g &amp;&amp; hexo deploy &amp;&amp; hexo clean</code><br>如果deployment失败，试试连接收费地址，还不行就把repository: git@github.com:jolinxql/jolinxql.github.io.git改为<br>repository: <a href="https://github.com/jolinxql/jolinxql.github.io.git" target="_blank" rel="external">https://github.com/jolinxql/jolinxql.github.io.git</a> 然后delete .deploy_git，重新执行一遍hexo clean &amp;&amp; hexo g &amp;&amp; hexo deploy &amp;&amp; hexo clean（需要密码），然后就可以把repository: <a href="https://github.com/jolinxql/jolinxql.github.io.git改为repository" target="_blank" rel="external">https://github.com/jolinxql/jolinxql.github.io.git改为repository</a>: git@github.com:jolinxql/jolinxql.github.io.git（不需要密码）</p>
 <h2 id="修改主题："><a href="#修改主题：" class="headerlink" title="修改主题："></a>修改主题：</h2><p><code> $ cd themes</code><br><code> $ git clone <a href="https://github.com/litten/hexo-theme-yilia.git" target="_blank" rel="external">https://github.com/litten/hexo-theme-yilia.git</a> yilia</code><br>(更新，未来有可能做的事情)git bull<br>修改hexo根目录下的 _config.yml ： theme: yilia</p>
 <h2 id="设置头像账户连接等等："><a href="#设置头像账户连接等等：" class="headerlink" title="设置头像账户连接等等："></a>设置头像账户连接等等：</h2><p>编辑站点主题theme/yilia下的_config.yml的avatar字段（账户字段如facebook,email…同理）：<br>原则上只要能访问的连接都可设置，如果是本地，可以设置为/img/avatar.jpg(实际地址是/themes/yilia/img/avatar.jpg)<br>如果是网上可以设置为<a href="https://avatars1.githubusercontent.com/u/32269?v=3&amp;s=460" target="_blank" rel="external">https://avatars1.githubusercontent.com/u/32269?v=3&amp;s=460</a></p>
