@@ -258,21 +258,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="install-nodejs"><a href="#install-nodejs" class="headerlink" title="install nodejs"></a>install nodejs</h2><p>从官网<a href="http://nodejs.org" target="_blank" rel="external">nodejs.org</a>下载msi安装包安装<br>将D:\Program Files\nodejs\node_modules\npm添加到环境变量Path<br>用cmd(不行的话改用git bash):</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
-<p>用cmd(不要用git bash):</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init e:\Source\Playground\HexoTest <span class="comment"># 一定要是一个空文件夹</span></span><br><span class="line">$ <span class="built_in">cd</span> e:\Source\Playground\HexoTest</span><br><span class="line">$ npm install </span><br><span class="line">$ hexo server -p 9090</span><br></pre></td></tr></table></figure>
-<p>成功了就可以ctrl+C进行下面的步骤</p>
-<h2 id="为git添加SSH"><a href="#为git添加SSH" class="headerlink" title="为git添加SSH"></a>为git添加SSH</h2><p>然后按照 <a href="http://iread.io/2015/09/hexo-guide-3/" target="_blank" rel="external">Hexo系列教程: (三)基于GitHub Page的Hexo搭建 </a> 的方法添加ssh。<br>其中，用cmd(不要用git bash): </p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save <span class="comment">## 安装部署所需要的插件</span></span><br></pre></td></tr></table></figure>
-<p>按照他的方法继续配置_config.yml，用git bash部署:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> e:\Source\Playground\HexoTest</span><br><span class="line">$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo deploy &amp;&amp; hexo clean</span><br></pre></td></tr></table></figure>
-<p>如果deployment失败，试试连接收费地址，还不行就把repository: git@github.com:jolinxql/jolinxql.github.io.git改为<br>repository: <a href="https://github.com/jolinxql/jolinxql.github.io.git" target="_blank" rel="external">https://github.com/jolinxql/jolinxql.github.io.git</a> 然后delete .deploy_git，重新执行一遍hexo clean &amp;&amp; hexo g &amp;&amp; hexo deploy &amp;&amp; hexo clean（需要密码），然后就可以把repository: <a href="https://github.com/jolinxql/jolinxql.github.io.git改为repository" target="_blank" rel="external">https://github.com/jolinxql/jolinxql.github.io.git改为repository</a>: git@github.com:jolinxql/jolinxql.github.io.git（不需要密码）</p>
-<h2 id="修改主题："><a href="#修改主题：" class="headerlink" title="修改主题："></a>修改主题：</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> themes</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/litten/hexo-theme-yilia.git yilia </span><br><span class="line">$ git pull <span class="comment"># 更新，未来有可能做的事情</span></span><br></pre></td></tr></table></figure>
-<p>修改hexo根目录下的 _config.yml ： theme: yilia</p>
-<h2 id="设置头像账户连接等等："><a href="#设置头像账户连接等等：" class="headerlink" title="设置头像账户连接等等："></a>设置头像账户连接等等：</h2><p>编辑站点主题theme/yilia下的_config.yml的avatar字段（账户字段如facebook,email…同理）：<br>原则上只要能访问的连接都可设置，如果是本地，可以设置为/img/avatar.jpg(实际地址是/themes/yilia/img/avatar.jpg)<br>如果是网上可以设置为<a href="https://avatars1.githubusercontent.com/u/32269?v=3&amp;s=460" target="_blank" rel="external">https://avatars1.githubusercontent.com/u/32269?v=3&amp;s=460</a></p>
-<h2 id="添加Page"><a href="#添加Page" class="headerlink" title="添加Page:"></a>添加Page:</h2><p>方法一：常规方法 ：hexo new page “pagename”<br>方法二：在source文件夹下，添加一个文件夹,名字是上面那个pagename,里面添加[小写字母组成的文件名.html]，必须小写。</p>
-
+        <h2 id="install-nodejs"><a href="#install-nodejs" class="headerlink" title="install nodejs"></a>install nodejs</h2><p>从官网<a href="http://nodejs.org">nodejs.org</a>下载msi安装包安装<br>
       
     </div>
     
@@ -285,6 +271,10 @@
 
       
 
+      
+        <p class="article-more-link">
+          <a  href="/tech/2016-04/我的Hexo配置过程/#more">more >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
