@@ -18,7 +18,7 @@
 1$ npm install hexo-cli -g
 用cmd(不要用git bash):
 1234$ hexo init e:\Source\Playground\HexoTe">
-<meta property="og:updated_time" content="2016-04-27T02:49:41.154Z">
+<meta property="og:updated_time" content="2016-04-27T06:39:42.773Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="我的Hexo配置过程">
 <meta name="twitter:description" content="install nodejs从官网nodejs.org下载msi安装包安装将D:\Program Files\nodejs\node_modules\npm添加到环境变量Path用cmd(不行的话改用git bash):
@@ -234,6 +234,7 @@
 <h2 id="修改主题："><a href="#修改主题：" class="headerlink" title="修改主题："></a>修改主题：</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> themes</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/litten/hexo-theme-yilia.git yilia </span><br><span class="line">$ git pull <span class="comment"># 更新，未来有可能做的事情</span></span><br></pre></td></tr></table></figure>
 <p>修改hexo根目录下的 _config.yml ： theme: yilia</p>
 <h2 id="设置头像账户连接等等："><a href="#设置头像账户连接等等：" class="headerlink" title="设置头像账户连接等等："></a>设置头像账户连接等等：</h2><p>编辑站点主题theme/yilia下的_config.yml的avatar字段（账户字段如facebook,email…同理）：<br>原则上只要能访问的连接都可设置，如果是本地，可以设置为/img/avatar.jpg(实际地址是/themes/yilia/img/avatar.jpg)<br>如果是网上可以设置为<a href="https://avatars1.githubusercontent.com/u/32269?v=3&amp;s=460" target="_blank" rel="external">https://avatars1.githubusercontent.com/u/32269?v=3&amp;s=460</a></p>
+<h2 id="添加Page"><a href="#添加Page" class="headerlink" title="添加Page:"></a>添加Page:</h2><p>方法一：常规方法 ：hexo new page “pagename”<br>方法二：在source文件夹下，添加一个文件夹,名字是上面那个pagename,里面添加[小写字母组成的文件名.html]，必须小写。</p>
 
       
     </div>
