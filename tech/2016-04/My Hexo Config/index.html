@@ -12,7 +12,7 @@
 <meta property="og:url" content="http://yoursite.com/tech/2016-04/My Hexo Config/index.html">
 <meta property="og:site_name" content="Qiaolin Xia">
 <meta property="og:description" content="install nodejsDownload NodeJS installer from nodejs.org">
-<meta property="og:updated_time" content="2016-05-02T16:02:36.132Z">
+<meta property="og:updated_time" content="2016-05-02T16:07:16.794Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="My Hexo Config">
 <meta name="twitter:description" content="install nodejsDownload NodeJS installer from nodejs.org">
@@ -142,8 +142,8 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
 <p>use cmd(<strong>not</strong> git bash):</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init e:\Source\Playground\HexoTest <span class="comment"># must be an empty folder</span></span><br><span class="line">$ <span class="built_in">cd</span> e:\Source\Playground\HexoTest</span><br><span class="line">$ npm install </span><br><span class="line">$ hexo server -p 9090</span><br></pre></td></tr></table></figure>
-<p>if succeed, press <code>ctrl</code> + <code>C</code> and go on.</p>
-<h2 id="为git添加SSH"><a href="#为git添加SSH" class="headerlink" title="为git添加SSH"></a>为git添加SSH</h2><p>read the <a href="http://iread.io/2015/09/hexo-guide-3/" target="_blank" rel="external">tutorial</a> and follow its instruction to add the SSH key.<br>use cmd(<strong>not</strong> git bash): </p>
+<p>if all things went well, press <code>ctrl</code> + <code>C</code> and continue.</p>
+<h2 id="Add-the-SSH-key-for-Git"><a href="#Add-the-SSH-key-for-Git" class="headerlink" title="Add the SSH key for Git"></a>Add the SSH key for Git</h2><p>read the <a href="http://iread.io/2015/09/hexo-guide-3/" target="_blank" rel="external">tutorial</a> and follow its instruction to add the SSH key.<br>use cmd(<strong>not</strong> git bash): </p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save <span class="comment">## install deployer add-on</span></span><br></pre></td></tr></table></figure>
 <p>Edit _config.yml and set values for deployment，here we use git bash to deploy:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> e:\Source\Playground\HexoTest</span><br><span class="line">$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo deploy &amp;&amp; hexo clean</span><br></pre></td></tr></table></figure>
