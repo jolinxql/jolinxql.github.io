@@ -12,7 +12,7 @@
 <meta property="og:url" content="http://yoursite.com/tech/2016-04/My Hexo Config/index.html">
 <meta property="og:site_name" content="Qiaolin Xia">
 <meta property="og:description" content="Nnstall NodejsDownload Nodejs installer from nodejs.org">
-<meta property="og:updated_time" content="2016-05-02T16:43:20.227Z">
+<meta property="og:updated_time" content="2016-05-02T18:43:22.001Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="My Hexo Config">
 <meta name="twitter:description" content="Nnstall NodejsDownload Nodejs installer from nodejs.org">
@@ -240,7 +240,7 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save <span class="comment">## install deployer add-on</span></span><br></pre></td></tr></table></figure>
 <p>Edit _config.yml and set values for deployment，here we use git bash to deploy:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> e:\Source\Playground\HexoTest</span><br><span class="line">$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo deploy &amp;&amp; hexo clean</span><br></pre></td></tr></table></figure>
-<p>Connect to PKU Global connection.(this is only for PKU students)<br>Ff deployment faild，try to use <code>repository: https://github.com/jolinxql/jolinxql.github.io.git</code> (instead of <code>repository: git@github.com:jolinxql/jolinxql.github.io.git</code>).<br>Then, delete .deploy_git，and run （password needed）</p>
+<p>Connect to PKU Global connection.(this is only for PKU students)<br>If the deployment faild，try to use <code>repository: https://github.com/jolinxql/jolinxql.github.io.git</code> (instead of <code>repository: git@github.com:jolinxql/jolinxql.github.io.git</code>).<br>Then, delete the folder <code>.deploy_git</code>，and run （password needed）</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo deploy &amp;&amp; hexo clean</span><br></pre></td></tr></table></figure>
 <p>Now, you can switch to <code>repository: git@github.com:jolinxql/jolinxql.github.io.git</code>（without password）</p>
 <h2 id="Change-the-Theme："><a href="#Change-the-Theme：" class="headerlink" title="Change the Theme："></a>Change the Theme：</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> themes</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/litten/hexo-theme-yilia.git yilia </span><br><span class="line">$ git pull <span class="comment"># update, which might be done in the future</span></span><br></pre></td></tr></table></figure>
