@@ -4,18 +4,36 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>My Hexo Config | Qiaolin Xia</title>
+  <title>Hexo Step by Step (1/3) | Qiaolin Xia</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Install NodejsDownload Nodejs installer from nodejs.org">
+  <meta name="description" content="by Qiaolin Xia
+
+Install Nodejs
+Add the SSH key for Git
+
+Install NodejsDownload Nodejs installer from nodejs.orgAdd D:\Program Files\nodejs\node_modules\npm to $PathUse cmd(or git bash):
+1$ npm install">
 <meta property="og:type" content="article">
-<meta property="og:title" content="My Hexo Config">
-<meta property="og:url" content="http://yoursite.com/tech/2016-04/My Hexo Config/index.html">
+<meta property="og:title" content="Hexo Step by Step (1/3)">
+<meta property="og:url" content="http://yoursite.com/tech/2016-04/Hexo Step by Step (1)/index.html">
 <meta property="og:site_name" content="Qiaolin Xia">
-<meta property="og:description" content="Install NodejsDownload Nodejs installer from nodejs.org">
-<meta property="og:updated_time" content="2016-05-03T05:13:01.236Z">
+<meta property="og:description" content="by Qiaolin Xia
+
+Install Nodejs
+Add the SSH key for Git
+
+Install NodejsDownload Nodejs installer from nodejs.orgAdd D:\Program Files\nodejs\node_modules\npm to $PathUse cmd(or git bash):
+1$ npm install">
+<meta property="og:updated_time" content="2016-05-03T14:31:04.340Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="My Hexo Config">
-<meta name="twitter:description" content="Install NodejsDownload Nodejs installer from nodejs.org">
+<meta name="twitter:title" content="Hexo Step by Step (1/3)">
+<meta name="twitter:description" content="by Qiaolin Xia
+
+Install Nodejs
+Add the SSH key for Git
+
+Install NodejsDownload Nodejs installer from nodejs.orgAdd D:\Program Files\nodejs\node_modules\npm to $PathUse cmd(or git bash):
+1$ npm install">
   
     <link rel="alternative" href="/atom.xml" title="Qiaolin Xia" type="application/atom+xml">
   
@@ -114,7 +132,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/web/" style="font-size: 10px;">web</a>
+						<a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/web/" style="font-size: 20px;">web</a>
 					</div>
 				</section>
 				
@@ -186,10 +204,10 @@
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-My Hexo Config" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-Hexo Step by Step (1)" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/tech/2016-04/My Hexo Config/" class="article-date">
+      <a href="/tech/2016-04/Hexo Step by Step (1)/" class="article-date">
   	<time datetime="2016-04-18T02:24:31.000Z" itemprop="datePublished">2016-04-18</time>
 </a>
     </div>
@@ -203,7 +221,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      My Hexo Config
+      Hexo Step by Step (1/3)
     </h1>
   
 
@@ -223,26 +241,25 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="Install-Nodejs"><a href="#Install-Nodejs" class="headerlink" title="Install Nodejs"></a>Install Nodejs</h2><p>Download Nodejs installer from <a href="http://nodejs.org" target="_blank" rel="external">nodejs.org</a><br><a id="more"></a><br>Add D:\Program Files\nodejs\node_modules\npm to $Path<br>Use cmd(or git bash):</p>
+        <p>by Qiaolin Xia</p>
+<ul>
+<li><strong>Install Nodejs</strong></li>
+<li><strong>Add the SSH key for Git</strong></li>
+</ul>
+<h2 id="Install-Nodejs"><a href="#Install-Nodejs" class="headerlink" title="Install Nodejs"></a><strong>Install Nodejs</strong></h2><p>Download Nodejs installer from <a href="http://nodejs.org" target="_blank" rel="external">nodejs.org</a><br>Add D:\Program Files\nodejs\node_modules\npm to $Path<br>Use cmd(or git bash):</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
 <p>Use cmd(<strong>not</strong> git bash):</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init e:\Source\Playground\HexoTest <span class="comment"># must be an empty folder</span></span><br><span class="line">$ <span class="built_in">cd</span> e:\Source\Playground\HexoTest</span><br><span class="line">$ npm install </span><br><span class="line">$ hexo server -p 9090</span><br></pre></td></tr></table></figure>
 <p>If all things went well, press <code>ctrl</code> + <code>C</code> and continue.</p>
-<h2 id="Add-the-SSH-key-for-Git"><a href="#Add-the-SSH-key-for-Git" class="headerlink" title="Add the SSH key for Git"></a>Add the SSH key for Git</h2><p>Read this <a href="http://iread.io/2015/09/hexo-guide-3/" target="_blank" rel="external">tutorial</a> and follow its instruction to add the SSH key.<br>Use cmd(<strong>not</strong> git bash): </p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save <span class="comment">## install deployer add-on</span></span><br></pre></td></tr></table></figure>
+<h2 id="Add-the-SSH-key-for-Git"><a href="#Add-the-SSH-key-for-Git" class="headerlink" title="Add the SSH key for Git"></a><strong>Add the SSH key for Git</strong></h2><p>Read this <a href="http://iread.io/2015/09/hexo-guide-3/" target="_blank" rel="external">tutorial</a> and follow its instruction to add the SSH key.<br>Use cmd(<strong>not</strong> git bash): </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save <span class="comment">## **install deployer add-on</span></span><br></pre></td></tr></table></figure>
 <p>Edit _config.yml and set values for deployment，here we use git bash to deploy:</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> e:\Source\Playground\HexoTest</span><br><span class="line">$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo deploy &amp;&amp; hexo clean</span><br></pre></td></tr></table></figure>
-<p>Connect to PKU Global connection.(this is only for PKU students)<br>If the deployment faild，try to use <code>repository: https://github.com/jolinxql/jolinxql.github.io.git</code> (instead of <code>repository: git@github.com:jolinxql/jolinxql.github.io.git</code>).<br>Then, delete the folder <code>.deploy_git</code>，and run （password needed）</p>
+<p>(This step is only for PKU students) Connect to PKU Global IP connection.<br>If the deployment failed，try to use <code>repository: https://github.com/jolinxql/jolinxql.github.io.git</code> (instead of <code>repository: git@github.com:jolinxql/jolinxql.github.io.git</code>).<br>Then, delete the folder <code>.deploy_git</code>，and run （password needed）:</p>
+<a id="more"></a>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo deploy &amp;&amp; hexo clean</span><br></pre></td></tr></table></figure>
-<p>Now, you can switch to <code>repository: git@github.com:jolinxql/jolinxql.github.io.git</code>（without password）</p>
-<h2 id="Change-the-Theme："><a href="#Change-the-Theme：" class="headerlink" title="Change the Theme："></a>Change the Theme：</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> themes</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/litten/hexo-theme-yilia.git yilia </span><br><span class="line">$ git pull <span class="comment"># update, which might be done in the future</span></span><br></pre></td></tr></table></figure>
-<p>Edit _config.yml under the root folder  ： <code>theme: yilia</code></p>
-<h2 id="Change-Avatar-and-Social-Links："><a href="#Change-Avatar-and-Social-Links：" class="headerlink" title="Change Avatar and Social Links："></a>Change Avatar and Social Links：</h2><p>Edit _config.yml theme/yilia ‘avatar’（as for social links, e.g., facebook,email, etc., things are the same.）:<br>Local path can be /img/avatar.jpg(real path is /themes/yilia/img/avatar.jpg)<br>URL can be <a href="https://avatars1.githubusercontent.com/u/32269?v=3&amp;s=460" target="_blank" rel="external">https://avatars1.githubusercontent.com/u/32269?v=3&amp;s=460</a></p>
-<h2 id="Generate-a-Page"><a href="#Generate-a-Page" class="headerlink" title="Generate a Page:"></a>Generate a Page:</h2><p>Method #1： Use cmd: </p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page <span class="string">"pagename"</span></span><br></pre></td></tr></table></figure>
-<p>Method #2：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> <span class="built_in">source</span></span><br><span class="line">mkdir pagename</span><br></pre></td></tr></table></figure>
-<p>If you want to use realitive path like <code>/pagename</code> then create <strong>index.html</strong> or <strong>index.md</strong> in the folder <code>/source/pagename/</code>.<br>Or if you want to use absolute path then <strong>lowercasefilename.html</strong>, this file name <strong>must be in lower case</strong>.</p>
+<p><code>hexo g</code> = <code>hexo generate</code><br><code>hexo s</code> = <code>hexo server</code></p>
+<p>Now, you can switch your repo property to <code>repository: git@github.com:jolinxql/jolinxql.github.io.git</code>（without password）</p>
 
       
     </div>
@@ -252,15 +269,20 @@
     
 <nav id="article-nav">
   
-    <a href="/tech/2016-04/My CSS3 Puppy/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/tech/2016-04/Hexo Step by Step (2)/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
-          My CSS3 Puppy
+          Hexo Step by Step (2/3)
         
       </div>
     </a>
   
+  
+    <a href="/tech/2015-09/How to draw a CSS3 Puppy/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">How to draw a CSS3 Puppy</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
   
 </nav>
 

@@ -113,7 +113,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/web/" style="font-size: 10px;">web</a>
+						<a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/web/" style="font-size: 20px;">web</a>
 					</div>
 				</section>
 				
@@ -187,11 +187,11 @@
 
       <div class="body-wrap">
   
-    <article id="post-My CSS3 Puppy" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-Hexo Step by Step (3)" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/tech/2016-04/My CSS3 Puppy/" class="article-date">
-  	<time datetime="2016-04-26T14:38:01.490Z" itemprop="datePublished">2016-04-26</time>
+      <a href="/tech/2016-04/Hexo Step by Step (3)/" class="article-date">
+  	<time datetime="2016-04-18T03:24:31.000Z" itemprop="datePublished">2016-04-18</time>
 </a>
     </div>
   
@@ -204,7 +204,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/tech/2016-04/My CSS3 Puppy/">My CSS3 Puppy</a>
+      <a class="article-title" href="/tech/2016-04/Hexo Step by Step (3)/">Hexo Step by Step (3/3)</a>
     </h1>
   
 
@@ -213,18 +213,177 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Copy this code I wrote(mainly in CSS3) into an empty html file and open it with your browser,<br>you will find something interesting :)<br>… or you are lazy, click <a href="/Puppy/puppy.html">here</a><br>
+        <p>by Qiaolin Xia</p>
+<ul>
+<li><strong>Add +1/Share Badges</strong></li>
+<li><strong>Special Image Style</strong></li>
+</ul>
+<h2 id="Add-1-Share-Badges"><a href="#Add-1-Share-Badges" class="headerlink" title="Add +1/Share Badges"></a><strong>Add +1/Share Badges</strong></h2><p>Please follow the instructions accordingly</p>
+<ol>
+<li><a href="https://developers.facebook.com/docs/plugins/like-button#configurator" target="_blank" rel="external">facebook.com</a></li>
+<li><a href="https://developer.linkedin.com/plugins/share" target="_blank" rel="external">linkedin.com</a></li>
+<li><a href="https://developers.google.com/+/web/+1button/#plusonetag" target="_blank" rel="external">google.com</a></li>
+</ol>
+<h2 id="Special-Image-Style"><a href="#Special-Image-Style" class="headerlink" title="Special Image Style"></a><strong>Special Image Style</strong></h2><p>To display images with a specific max size, i.e., if they are<br>bigger than some value or the current window is to small,<br>resize them to <code>min(your-value, real-image-size, window-or-container-size)</code>, preserving the aspect ratio,<br>else do nothing, you can just <strong>put the specific markdown lines into an html block (see the code below), and<br>directly write the property for <code>style</code>.</strong></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">"width:800px; max-width: 100%; height: auto; "</span> <span class="attr">markdown</span>=<span class="string">"1"</span>&gt;</span></span><br><span class="line">![img](/Gallery/img/mount1.jpeg)</span><br><span class="line">![img](/Gallery/img/mount2.jpg)</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
       
     </div>
     
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web/">web</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-Hexo Step by Step (2)" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/tech/2016-04/Hexo Step by Step (2)/" class="article-date">
+  	<time datetime="2016-04-18T02:54:31.000Z" itemprop="datePublished">2016-04-18</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/tech/2016-04/Hexo Step by Step (2)/">Hexo Step by Step (2/3)</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>by Qiaolin Xia</p>
+<ul>
+<li><strong>Change the Theme</strong></li>
+<li><strong>Change the Avatar and Social Links</strong></li>
+<li><strong>Generate a Page</strong></li>
+<li><strong>Preview the Website Locally</strong></li>
+</ul>
+<h2 id="Change-the-Theme"><a href="#Change-the-Theme" class="headerlink" title="Change the Theme"></a><strong>Change the Theme</strong></h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> themes</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/litten/hexo-theme-yilia.git yilia </span><br><span class="line">$ git pull <span class="comment"># update, which might be done in the future</span></span><br></pre></td></tr></table></figure>
+<p>Edit _config.yml under the root folder  ： <code>theme: yilia</code></p>
+<h2 id="Change-the-Avatar-and-Social-Links"><a href="#Change-the-Avatar-and-Social-Links" class="headerlink" title="Change the Avatar and Social Links"></a><strong>Change the Avatar and Social Links</strong></h2><p>Edit _config.yml theme/yilia ‘avatar’（as for social links, e.g., facebook,email, etc., things are the same.）:<br>Local path can be /img/avatar.jpg(real path is /themes/yilia/img/avatar.jpg)<br>URL can be <a href="https://avatars1.githubusercontent.com/u/32269?v=3&amp;s=460" target="_blank" rel="external">https://avatars1.githubusercontent.com/u/32269?v=3&amp;s=460</a></p>
+<h2 id="Generate-a-Page"><a href="#Generate-a-Page" class="headerlink" title="Generate a Page"></a><strong>Generate a Page</strong></h2><p>Method #1： Use cmd: </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page <span class="string">"pagename"</span></span><br></pre></td></tr></table></figure>
+<p>Method #2：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> <span class="built_in">source</span></span><br><span class="line">mkdir pagename</span><br></pre></td></tr></table></figure>
+<p>If you want to use realitive path like <code>/pagename</code> then create <strong>index.html</strong> or <strong>index.md</strong> in the folder <code>/source/pagename/</code>.<br>Or if you want to use absolute path then <strong>lowercasefilename.html</strong>, this file name <strong>must be in lower case</strong>.</p>
+<h2 id="Preview-the-Website-Locally"><a href="#Preview-the-Website-Locally" class="headerlink" title="Preview the Website Locally"></a><strong>Preview the Website Locally</strong></h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo g &amp;&amp; hexo s -p 9090</span><br></pre></td></tr></table></figure>
+<p><code>hexo g</code> = <code>hexo generate</code><br><code>hexo s</code> = <code>hexo server</code><br><code>-p</code> = <code>--port</code>  </p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web/">web</a></li></ul>
+	</div>
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-Hexo Step by Step (1)" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/tech/2016-04/Hexo Step by Step (1)/" class="article-date">
+  	<time datetime="2016-04-18T02:24:31.000Z" itemprop="datePublished">2016-04-18</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/tech/2016-04/Hexo Step by Step (1)/">Hexo Step by Step (1/3)</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>by Qiaolin Xia</p>
+<ul>
+<li><strong>Install Nodejs</strong></li>
+<li><strong>Add the SSH key for Git</strong></li>
+</ul>
+<h2 id="Install-Nodejs"><a href="#Install-Nodejs" class="headerlink" title="Install Nodejs"></a><strong>Install Nodejs</strong></h2><p>Download Nodejs installer from <a href="http://nodejs.org">nodejs.org</a><br>Add D:\Program Files\nodejs\node_modules\npm to $Path<br>Use cmd(or git bash):</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+<p>Use cmd(<strong>not</strong> git bash):</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init e:\Source\Playground\HexoTest <span class="comment"># must be an empty folder</span></span><br><span class="line">$ <span class="built_in">cd</span> e:\Source\Playground\HexoTest</span><br><span class="line">$ npm install </span><br><span class="line">$ hexo server -p 9090</span><br></pre></td></tr></table></figure>
+<p>If all things went well, press <code>ctrl</code> + <code>C</code> and continue.</p>
+<h2 id="Add-the-SSH-key-for-Git"><a href="#Add-the-SSH-key-for-Git" class="headerlink" title="Add the SSH key for Git"></a><strong>Add the SSH key for Git</strong></h2><p>Read this <a href="http://iread.io/2015/09/hexo-guide-3/">tutorial</a> and follow its instruction to add the SSH key.<br>Use cmd(<strong>not</strong> git bash): </p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save <span class="comment">## **install deployer add-on</span></span><br></pre></td></tr></table></figure>
+<p>Edit _config.yml and set values for deployment，here we use git bash to deploy:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> e:\Source\Playground\HexoTest</span><br><span class="line">$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo deploy &amp;&amp; hexo clean</span><br></pre></td></tr></table></figure>
+<p>(This step is only for PKU students) Connect to PKU Global IP connection.<br>If the deployment failed，try to use <code>repository: https://github.com/jolinxql/jolinxql.github.io.git</code> (instead of <code>repository: git@github.com:jolinxql/jolinxql.github.io.git</code>).<br>Then, delete the folder <code>.deploy_git</code>，and run （password needed）:</p>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web/">web</a></li></ul>
+	</div>
+
       
 
       
         <p class="article-more-link">
-          <a  href="/tech/2016-04/My CSS3 Puppy/#more">more >></a>
+          <a  href="/tech/2016-04/Hexo Step by Step (1)/#more">more >></a>
         </p>
       
       <div class="clearfix"></div>
@@ -243,11 +402,11 @@
 
 
   
-    <article id="post-My Hexo Config" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-How to draw a CSS3 Puppy" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/tech/2016-04/My Hexo Config/" class="article-date">
-  	<time datetime="2016-04-18T02:24:31.000Z" itemprop="datePublished">2016-04-18</time>
+      <a href="/tech/2015-09/How to draw a CSS3 Puppy/" class="article-date">
+  	<time datetime="2015-09-18T09:04:01.000Z" itemprop="datePublished">2015-09-18</time>
 </a>
     </div>
   
@@ -260,7 +419,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/tech/2016-04/My Hexo Config/">My Hexo Config</a>
+      <a class="article-title" href="/tech/2015-09/How to draw a CSS3 Puppy/">How to draw a CSS3 Puppy</a>
     </h1>
   
 
@@ -269,7 +428,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="Install-Nodejs"><a href="#Install-Nodejs" class="headerlink" title="Install Nodejs"></a>Install Nodejs</h2><p>Download Nodejs installer from <a href="http://nodejs.org">nodejs.org</a><br>
+        <p>by Qiaolin Xia</p>
+<h1 id="Preview"><a href="#Preview" class="headerlink" title="Preview"></a>Preview</h1><p>Click <a href="/Puppy/puppy.html">here</a></p>
+<h1 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h1><p>First of all, I assume you have plenty of time to try your experiments and you have a very strong desire to create a pet by yourself.</p>
+<p>Here is my instruction: <strong>DO NOT</strong> Copy &amp; Paste, just <strong>RETYPE</strong> the code below. I recommend you to do so with some online HTML/CSS3 Editor such as <a href="http://dabblet.com/">Dabblet</a> .</p>
+<p>That’s all. The reason is also very simple:</p>
+<p>What you type almost certainly won’t be a perfect copy of my original snippet. But as you progress through the code, you’ll inevitably <strong>deviate from it</strong>, and quite likely, <strong>make large changes</strong> to enhance it and <strong>add comments</strong> as well.</p>
+<p>Afterwards, what you’ve just typed won’t be just some code I wrote here or what you have found elsewhere.<br><strong>It’ll be your code.</strong></p>
       
     </div>
     
@@ -277,14 +442,14 @@
       
       
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web/">web</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/web/">web</a></li></ul>
 	</div>
 
       
 
       
         <p class="article-more-link">
-          <a  href="/tech/2016-04/My Hexo Config/#more">more >></a>
+          <a  href="/tech/2015-09/How to draw a CSS3 Puppy/#more">more >></a>
         </p>
       
       <div class="clearfix"></div>
