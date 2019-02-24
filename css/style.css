@@ -490,7 +490,7 @@ a {
 #header .profilepic {
   text-align: center;
   display: block;
-  border: 5px solid #727272;
+  border: 5px solid #fff;
   -webkit-border-radius: 365px;
   border-radius: 365px;
   width: 180px;
