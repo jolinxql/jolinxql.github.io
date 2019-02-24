@@ -490,15 +490,15 @@ a {
 #header .profilepic {
   text-align: center;
   display: block;
-  border: 5px solid #fff;
-  -webkit-border-radius: 300px;
-  border-radius: 300px;
-  width: 128px;
-  height: 128px;
+  border: 5px solid #696969;
+  -webkit-border-radius: 365px;
+  border-radius: 365px;
+  width: 180px;
+  height: 180px;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
-  background: #88acdb;
+  background: #fff;
   -webkit-transition: all 0.2s ease-in;
   display: -webkit-box;
   -webkit-box-orient: horizontal;
