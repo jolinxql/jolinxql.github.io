@@ -672,12 +672,12 @@ a {
 #header .header-nav .social a.douban:hover {
   border: 1px solid #06c611;
 }
-#header .header-nav .social a.instagram {
-  background: url("/img/instagram.png") center no-repeat #005a87;
-  border: 1px solid #005a87;
+#header .header-nav .social a.mail {
+  background: url("/img/instagram.png") center no-repeat #afe6ca;
+  border: 1px solid #afe6ca;
 }
-#header .header-nav .social a.instagram:hover {
-  border: 1px solid #006b98;
+#header .header-nav .social a.mail:hover {
+  border: 1px solid #af9b98;
 }
 #header .switch-part {
   width: 100%;
