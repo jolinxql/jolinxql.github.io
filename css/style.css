@@ -673,11 +673,11 @@ a {
   border: 1px solid #06c611;
 }
 #header .header-nav .social a.mail {
-  background: url("/img/mail.png") center no-repeat #afe6ca;
-  border: 1px solid #afe6ca;
+  background: url("/img/mail.png") center no-repeat #06c611;
+  border: 1px solid #06c611;
 }
 #header .header-nav .social a.mail:hover {
-  border: 1px solid #af9b98;
+  border: 1px solid #06c611;
 }
 #header .switch-part {
   width: 100%;
